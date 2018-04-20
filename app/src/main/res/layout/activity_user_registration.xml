@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginpage"
+    tools:context="c.ab.accommodationfinder.UserRegistration"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/lblSignUp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="44dp"
+        android:gravity="center"
+        android:text="SIGN UP NOW"
+        android:textStyle="italic"
+        android:textColor="@color/colortxtBackground"
+        android:textSize="@dimen/txtFontSize"
+        android:fontFamily="sans-serif-smallcaps"
+        app:layout_constraintBottom_toTopOf="@+id/txtFirstName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/txtLastName"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignLeft="@+id/txtFirstName"
+        android:layout_marginBottom="44dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_marginEnd="23dp"
+        android:layout_marginStart="23dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:hint=" LASTNAME"
+        android:textColor="@color/colortxtBackground"
+
+        android:drawableLeft="@drawable/nameicon"
+        android:drawableStart="@drawable/nameicon"
+        app:layout_constraintBottom_toTopOf="@+id/txtEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtFirstName" />
+
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignLeft="@+id/txtLastName"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_marginBottom="47dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginStart="22dp"
+        android:ems="10"
+        android:hint=" E-MAIL"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/colortxtBackground"
+        android:drawableLeft="@drawable/emailicon"
+        android:drawableStart="@drawable/emailicon"
+        app:layout_constraintBottom_toTopOf="@+id/txtPwd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLastName" />
+
+    <EditText
+        android:id="@+id/txtFirstName"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignRight="@+id/lblSignUp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_marginBottom="47dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginStart="22dp"
+        android:ems="10"
+        android:hint=" FIRSTNAME"
+        android:inputType="textPersonName"
+        android:textColor="@color/colortxtBackground"
+        android:drawableLeft="@drawable/nameicon"
+        android:drawableStart="@drawable/nameicon"
+        app:layout_constraintBottom_toTopOf="@+id/txtLastName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblSignUp">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/txtPwd"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignLeft="@+id/txtEmail"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_marginBottom="49dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginStart="21dp"
+        android:ems="10"
+        android:hint=" PASSWORD"
+        android:inputType="textPassword"
+        android:textColor="@color/colortxtBackground"
+        android:drawableLeft="@drawable/passwordicon"
+        android:drawableStart="@drawable/passwordicon"
+        app:layout_constraintBottom_toTopOf="@+id/btnReg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmail">
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btnReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="27dp"
+        android:layout_marginEnd="40dp"
+        android:text="Register"
+        android:textColor="@color/colortxtBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnCancel"
+        app:layout_constraintTop_toBottomOf="@+id/txtPwd" />
+
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnReg"
+        android:layout_alignBottom="@+id/btnReg"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="81dp"
+        android:layout_marginStart="46dp"
+        android:text="Cancel"
+        android:textColor="@color/colortxtBackground"
+        app:layout_constraintBottom_toBottomOf="@+id/btnReg"
+        app:layout_constraintEnd_toStartOf="@+id/btnReg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnReg" />
+</android.support.constraint.ConstraintLayout>

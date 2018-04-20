@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginpage"
+    tools:context="c.ab.accommodationfinder.UserRegistration"
+    tools:layout_editor_absoluteY="73dp">
+
+    <TextView
+        android:id="@+id/lblPostAccom"
+        android:layout_width="0dp"
+        android:layout_height="41dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
+        android:text="@string/PostAccommodation"
+        android:textColor="@color/colortxtBackground"
+        android:textSize="@dimen/txtFontSize"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/txtDescription"
+        android:layout_width="0dp"
+        android:layout_height="41dp"
+        android:layout_alignLeft="@+id/txtAccomTitle"
+        android:layout_marginEnd="23dp"
+        android:layout_marginStart="23dp"
+
+        android:layout_marginTop="25dp"
+        android:drawableLeft="@drawable/accomdescription"
+        android:drawableStart="@drawable/accomdescription"
+        android:ems="10"
+        android:fontFamily="sans-serif-smallcaps"
+        android:hint=" DESCRIPTION"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:textColor="@color/colortxtBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAccomTitle" />
+
+
+    <EditText
+        android:id="@+id/txtCost"
+        android:layout_width="0dp"
+        android:layout_height="41dp"
+        android:layout_alignLeft="@+id/txtDescription"
+        android:layout_marginEnd="22dp"
+        android:layout_marginStart="22dp"
+        android:drawableLeft="@drawable/accomcost"
+        android:drawableStart="@drawable/accomcost"
+        android:ems="10"
+        android:fontFamily="sans-serif-smallcaps"
+        android:hint=" COST"
+        android:inputType="number"
+        android:textColor="@color/colortxtBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtAccomTitle"
+        android:layout_width="0dp"
+        android:layout_height="41dp"
+        android:layout_alignRight="@+id/lblSignUp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="85dp"
+        android:drawableLeft="@drawable/accomtitle"
+        android:drawableStart="@drawable/accomtitle"
+        android:ems="10"
+        android:fontFamily="sans-serif-smallcaps"
+        android:hint="ACCOMODATION TITLE"
+        android:inputType="textPersonName"
+        android:textColor="@color/colortxtBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/txtAvailableDate"
+        android:layout_width="0dp"
+        android:layout_height="41dp"
+        android:layout_alignLeft="@+id/txtCost"
+        android:layout_marginBottom="94dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="97dp"
+        android:drawableLeft="@drawable/accomdate"
+        android:drawableStart="@drawable/accomdate"
+        android:ems="10"
+        android:fontFamily="sans-serif-smallcaps"
+        android:hint=" AVAILABLE DATE"
+        android:inputType="date"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCost">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/txtPhone"
+        android:layout_width="0dp"
+        android:layout_height="41dp"
+        android:layout_alignLeft="@+id/txtCost"
+        android:layout_marginBottom="69dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="69dp"
+        android:drawableLeft="@drawable/accomphone"
+        android:drawableStart="@drawable/accomphone"
+        android:ems="10"
+        android:fontFamily="sans-serif-smallcaps"
+        android:hint=" PHONE"
+        android:inputType="phone"
+        android:digits="0123456789+"
+        app:layout_constraintBottom_toBottomOf="@+id/txtAvailableDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtCost">
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btnPost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="43dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Post"
+        android:textColor="@color/colortxtBackground"
+        app:layout_constraintEnd_toEndOf="@+id/txtAvailableDate"
+        app:layout_constraintTop_toBottomOf="@+id/txtAvailableDate" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnReg"
+        android:layout_alignBottom="@+id/btnReg"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Cancel"
+        android:textColor="@color/colortxtBackground"
+        app:layout_constraintStart_toStartOf="@+id/txtAvailableDate"
+        app:layout_constraintTop_toBottomOf="@+id/txtAvailableDate" />
+</android.support.constraint.ConstraintLayout>

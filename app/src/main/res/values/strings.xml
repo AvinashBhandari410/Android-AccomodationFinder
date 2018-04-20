@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Accommodation Finder</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_Location">My Location</string>
+    <string name="GoogleAPIKey">AIzaSyDyeARnVwm2t9YItDoefrxBTE0SLic0Fyo</string>
+    <string name="title_activity_mainpage">Mainpage</string>
+    <string name="title_activity_about_us">AboutUs</string>
+    <string name="title_activity_menu">Menu</string>
+    <string name="title_activity_menuscreen">Menuscreen</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email"> E-MAIL</string>
+    <string name="prompt_password"> PASSWORD</string>
+    <string name="prompt_FirstName"> FIRSTNAME</string>
+    <string name="prompt_LastName"> PASSWORD</string>
+    <string name="action_sign_in">SIGN UP</string>
+    <string name="action_sign_in_short">SIGN IN</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_invalid_phoneNumber">Phone Number should be 10 digit</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions."</string>
+    <!-- TODO Toolbars text shown -->
+    <string name="PostAccommodation">POST ACCOMMODATION</string>
+    <string name="AvailableAccommodations">AVAILABLE ACCOMMODATIONS</string>
+    <string name="MyAccommodations">MY ACCOMMODATION POSTS</string>
+    <string name="Logout">LOGOUT</string>
+    <string-array name="navigation_drawer_items_array">
+        <item>ADD NEW</item>
+        <item>AVAILABLE ACCOMODATIONS</item>
+        <item>MY ACCOMODATIONS</item>
+        <item>LOGOUT</item>
+    </string-array>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
